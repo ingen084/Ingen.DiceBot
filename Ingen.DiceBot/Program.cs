@@ -141,6 +141,7 @@ namespace Ingen.DiceBot
 
 				await Client.LoginAsync(TokenType.Bot, File.ReadAllText("token"));
 				await Client.StartAsync();
+				await Client.SetGameAsync("Let's dice roll!!!!!!");
 
 				Console.ReadLine();
 
